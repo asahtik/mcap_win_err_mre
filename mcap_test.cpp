@@ -22,6 +22,14 @@ int main()
 			return 1;
 		}
 	}
+	auto messageView = reader.readMessages();
+	for (auto it = messageView.begin(); it != messageView.end(); it++) {
+		// skip messages that we can't use
+		if ((it->schema->encoding != "protobuf") || it->schema->name != "foxglove.PosesInFrame") {
+			continue;
+		}
+		// TODO
+	}
 	reader.close();
 	return 0;
 }
