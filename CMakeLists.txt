@@ -2,7 +2,7 @@ cmake_minimum_required (VERSION 3.12)
 
 project ("mcap_test")
 
-add_library (mcap "mcap.cpp")
+add_library (mcap STATIC "mcap.cpp")
 
 target_include_directories(mcap PUBLIC ${CMAKE_SOURCE_DIR}/mcap/include)
 
