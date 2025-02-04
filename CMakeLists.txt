@@ -11,3 +11,4 @@ add_executable (mcap_test "mcap_test.cpp")
 target_link_libraries(mcap_test mcap)
 
 set_property(TARGET mcap_test PROPERTY CXX_STANDARD 20)
+set_property(TARGET mcap PROPERTY CXX_STANDARD 20)
