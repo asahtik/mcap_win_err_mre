@@ -1,0 +1,8 @@
+#ifndef MCAP_COMPRESSION_NO_ZSTD
+#define MCAP_COMPRESSION_NO_ZSTD
+#endif
+#ifndef MCAP_COMPRESSION_NO_LZ4
+#define MCAP_COMPRESSION_NO_LZ4
+#endif
+#define MCAP_IMPLEMENTATION
+#include "mcap/mcap.hpp"
